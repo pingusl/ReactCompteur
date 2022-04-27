@@ -1,38 +1,82 @@
+body {
+  background-color: #ffffff;
+  color: #202020;
+}
+
 .App {
-  text-align: center;
+  width: 30rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: lighter;
+  /* border-color: white;
+  border-width: 1px;
+  border-style: solid; */
+  width: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border-color: white;
+  border-width: 1px;
+  border-style: solid; */
+  width: inherit;
+  height: 50rem;
+}
+/* Bouton operating + result */
+.operating {
+  display: table;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid; */
+  width: inherit;
+  margin-top: 15rem;
+}
+.sign-minus {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: xx-large;
+  font-weight: bold;
+  height: 3rem;
+  width: 5rem;
+  margin-left: 63%;
+  border: none;
+}
+.sign-plus {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: xx-large;
+  font-weight: bold;
+  height: 3rem;
+  width: 5rem;
+  border: none;
+}
+.result {
+  display: table-cell;
+  background-color: #5c48d3;
+  border-radius: 15%;
   color: white;
+  font-size: xx-large;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.App-link {
-  color: #61dafb;
+/* Bouton reset */
+.reset {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: inherit;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset-bt {
+  background-color: #5c48d3;
+  border-radius: 15%;
+  color: white;
+  height: 1.5rem;
+  margin-top: 1rem;
 }
