@@ -12,6 +12,7 @@ const Main = () => {
             onClick={() => {
               setCounter(counter - 1);
             }}
+            style={counter === 0 ? { color: "white" } : { color: "black" }}
           >
             -
           </button>
@@ -25,6 +26,7 @@ const Main = () => {
             onClick={() => {
               setCounter(counter + 1);
             }}
+            style={counter > 9 ? { color: "white" } : { color: "black" }}
           >
             +
           </button>
