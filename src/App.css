@@ -1,20 +1,29 @@
 body {
   background-color: #ffffff;
   color: #202020;
+  font-family: sans-serif;
 }
 
 .App {
-  width: 30rem;
+  /* width: 30rem; */
+  width: 100%;
 }
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   font-size: xx-large;
   font-weight: lighter;
   /* border-color: white;
   border-width: 1px;
   border-style: solid; */
   width: inherit;
+
+  box-shadow: 0 0 1px grey;
+}
+.image {
+  border-radius: 20%;
+  padding: 1rem;
 }
 .main {
   display: flex;
@@ -36,6 +45,10 @@ body {
   width: inherit;
   margin-top: 15rem;
 }
+.minus {
+  display: flex;
+  justify-content: flex-end;
+}
 .sign-minus {
   background-color: #ffffff;
   color: #000000;
@@ -45,6 +58,10 @@ body {
   width: 5rem;
   margin-left: 63%;
   border: none;
+}
+.plus {
+  display: flex;
+  justify-content: flex-start;
 }
 .sign-plus {
   background-color: #ffffff;

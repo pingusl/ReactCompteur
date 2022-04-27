@@ -6,23 +6,29 @@ const Main = () => {
   return (
     <main className="main">
       <div className="operating">
-        <button
-          className="sign-minus"
-          onClick={() => {
-            setCounter(counter - 1);
-          }}
-        >
-          -
-        </button>
+        <div className="minus">
+          <button
+            className="sign-minus"
+            onClick={() => {
+              setCounter(counter - 1);
+            }}
+          >
+            -
+          </button>
+        </div>
+
         <div className="result">{counter}</div>
-        <button
-          className="sign-plus"
-          onClick={() => {
-            setCounter(counter + 1);
-          }}
-        >
-          +
-        </button>
+        <div className="plus">
+          {" "}
+          <button
+            className="sign-plus"
+            onClick={() => {
+              setCounter(counter + 1);
+            }}
+          >
+            +
+          </button>
+        </div>
       </div>
       <div className="reset">
         <button
